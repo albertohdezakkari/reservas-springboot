@@ -16,10 +16,8 @@ import lombok.Data;
 @Data
 @Entity
 @Table(name = "CLIENTE")
-
 @NamedQuery(name = "Cliente.findByIdCliente", 
 query ="Select c from Cliente c where c.idCliente = ?1")
-
 public class Cliente {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
